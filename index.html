@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiao | 个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Xiao</a>
+            <ul class="nav-menu">
+                <li><a href="#about">关于</a></li>
+                <li><a href="#experience">经历</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 首屏 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="avatar-frame">
+                <img src="images/photo.jpg" alt="Xiao's Photo" class="avatar" id="avatarImg"
+                     onerror="this.style.display='none'; document.getElementById('avatarPlaceholder').style.display='flex'">
+                <div class="avatar-placeholder" id="avatarPlaceholder">
+                    <i class="fas fa-user"></i>
+                    <span>添加照片 →</span>
+                </div>
+            </div>
+            <h1 class="hero-name">Xiao</h1>
+            <p class="hero-title">全栈开发者 · AI 爱好者 · 终身学习者</p>
+            <p class="hero-subtitle">用代码创造价值，用技术改变世界</p>
+            <div class="hero-social">
+                <a href="https://github.com/macxiao17-sys" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="mailto:macxiao17@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="divider"></div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>你好！我是 <strong>Xiao</strong>，一名充满热情的全栈开发者。我热爱用代码构建优雅、高效的解决方案，探索前沿技术，并将创意转化为实际产品。</p>
+                    <p>我相信技术的力量能够改变世界，而我正在这条路上不断前行。无论是前端交互、后端架构，还是 AI 应用开发，我都保持着强烈的学习热情和探索精神。</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>中国</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span>全栈开发</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>终身学习者</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 经历 -->
+    <section class="section bg-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title">我的经历</h2>
+            <div class="divider"></div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - 至今</div>
+                    <div class="timeline-content">
+                        <h3>独立开发者</h3>
+                        <p class="timeline-org">自由职业</p>
+                        <p>专注于 Web 开发、AI 应用构建和个人项目开发。使用现代技术栈打造高效、优雅的解决方案。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>全栈开发实习</h3>
+                        <p class="timeline-org">科技公司</p>
+                        <p>参与多个 Web 项目的全栈开发工作，从前端交互到后端 API 设计，积累了丰富的实战经验。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>编程学习之旅</h3>
+                        <p class="timeline-org">自我提升</p>
+                        <p>系统学习前后端开发、数据结构与算法，完成多个个人项目，打下了扎实的技术基础。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">技能专长</h2>
+            <div class="divider"></div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>前端开发</h3>
+                    <p>HTML / CSS / JavaScript<br>React / Vue</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>后端开发</h3>
+                    <p>Node.js / Python<br>RESTful API / 数据库</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI 应用</h3>
+                    <p>LLM 应用开发<br>AI Agent / Prompt Engineering</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>工具与协作</h3>
+                    <p>Git / GitHub<br>Linux / DevOps</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目 -->
+    <section class="section bg-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">我的项目</h2>
+            <div class="divider"></div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-globe"></i></div>
+                    <h3>个人网站</h3>
+                    <p>基于 HTML/CSS/JS 构建的个人主页，展示个人品牌与作品集。</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/macxiao17-sys/macxiao17-sys.github.io" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> 查看源码
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI 助手应用</h3>
+                    <p>利用大语言模型 API 构建的智能对话应用，具备上下文记忆和工具调用能力。</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>LLM</span>
+                        <span>API</span>
+                    </div>
+                    <a href="https://github.com/macxiao17-sys" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> 查看源码
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>更多项目筹备中</h3>
+                    <p>不断学习、持续输出，更多精彩项目即将上线！</p>
+                    <div class="project-tags">
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="divider"></div>
+            <div class="contact-content">
+                <p class="contact-text">如果你对我的项目感兴趣，或者想要与我合作，欢迎随时联系！</p>
+                <div class="contact-links">
+                    <a href="mailto:macxiao17@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i> macxiao17@gmail.com
+                    </a>
+                    <a href="https://github.com/macxiao17-sys" target="_blank" class="contact-btn">
+                        <i class="fab fa-github"></i> macxiao17-sys
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Xiao. Built with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
